@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>MyWebsite</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-nav">Hire Me</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container" id="home">
+        <div class="intro">
+     <h4>Web Development</h4>
+    <p>We create stunning, fully responsive websites tailored to your brand. Our development process ensures speed, security, and user-friendly design to deliver the best digital experience for your audience.</p>
+    <button class="card-btn">Learn More</button>
+        </div>
+        <div class="image">
+            <img src="wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.avif" alt="nature">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <img src="istockphoto-517188688-612x612.jpg" alt="About Image">
+        <div class="about-text">
+           <h3>About Me</h3>
+<p>Hello! I'm a passionate Web Developer who loves building clean, modern, and user-friendly websites. With a strong understanding of front-end technologies like HTML, CSS, JavaScript, React, and backend frameworks like Node.js and Express, I create solutions that are both visually appealing and functional.</p>
+<p>I believe in writing clean and efficient code, focusing on performance, and ensuring responsive design for all devices. My goal is to deliver high-quality web experiences that help businesses and individuals achieve their goals online.</p>
+
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <h3>Contact Me</h3>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+    <!-- Services / Cards Section -->
+<section class="cards-section">
+    <h3>Our Services</h3>
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="web-design-technology-browsing-programming-concept_53876-163260.avif" alt="Service 1">
+            <h4>Web Development</h4>
+            <p>Build modern, responsive websites with clean design and robust functionality.</p>
+            <button>Read More</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="UIUX-design-cost.webp" alt="Service 2">
+            <h4>UI/UX Design</h4>
+            <p>Create user-friendly designs with great experience and appealing interfaces.</p>
+            <button>Read More</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="business-people-use-seo-tools-unlocking-online-potential-boost-visibility-attract-organic-traffic-and-dominate-search-engine-rankings-with-strategic-optimization-techniques-digital-marketing-photo.jpg" alt="Service 3">
+            <h4>SEO Optimization</h4>
+            <p>Improve your website visibility with professional SEO services and strategies.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+        <p>Follow us on social media</p>
+    </footer>
+
+    <script>
+        // Form Submission Alert
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page refresh
+            alert("✅ Thank you for contacting us! We will get back to you soon.");
+        });
+    </script>
+</body>
+</html>
